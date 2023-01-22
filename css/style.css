@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url(../fonts/opensans-regular-webfont.woff2) format('woff2'),
+        url(../fonts/opensans-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.container{
+    width: 100%; 
+    font-family: 'open_sansregular';
+}
+.container__inside{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__container{
+    height: 600px;
+    max-width: 930px;
+    display: flex;
+    margin: 0 auto;
+}
+.header{
+    max-width: 930px;
+    font-size: 24px;
+    color: white;;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.header__text{
+  flex-direction: column;
+  padding-top: 20px;
+  line-height: 30px;
+}
+.header__img{
+    display: flex;
+    align-items: flex-end;
+}
+.banner{
+    max-width: 930px;
+    height:200px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.banner__title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #232323;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.banner__text{
+    font-size: 18px;
+    color: #838383;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.article__container{
+    max-width: 930px;
+    height:200px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.article{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    margin-right:20px
+}
+.article--secondary,
+.article--third{
+    margin-right:20px;
+}
+.article--secondary:after,
+.article--third:after{
+    content: "";
+    position: absolute;
+    width:1px;
+    height:150px;
+    background-color: gainsboro;
+    top: -30px;
+    left: 0px;
+}
+.article__title{
+    font-size: 24px;
+    font-weight:bold ;
+    color: #232323;
+    padding: 20px;
+}
+.article__text{
+    font-size: 16px;
+    color: #838383;
+    text-align:center;
+}
